@@ -51,7 +51,7 @@ export default function Spinner() {
     <div className="widget-spinner container">
       <h2>Spinner</h2>
       {
-        true && (
+        { spinnerOn } && (
           <div id="spinner" className="spinner">
             --+--
           </div>

@@ -46,9 +46,11 @@ export default function Input() {
     const { value } = evt.target;
 
     /* STEP 4 */
+    setInputValue(value);
   };
   const reset = () => {
     /* STEP 5 */
+    setInputValue("");
   };
 
   const style = {
@@ -65,7 +67,13 @@ export default function Input() {
       </div>{" "}
       {/* STEP 3 */}
       <div>
-        <input id="input" type="text" onChange={changeInput} /> {/* STEP 6 */}
+        <input
+          id="input"
+          type="text"
+          onChange={changeInput}
+          value={inputValue}
+        />{" "}
+        {/* STEP 6 */}
         <button id="resetInput" onClick={reset}>
           Reset
         </button>

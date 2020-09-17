@@ -58,7 +58,7 @@ export default function Moods() {
     <div className="widget-moods container">
       <h2>Moods</h2>
       <div id="mood" style={style}>
-        Not sure how I feel
+        {mood}
       </div>{" "}
       {/* STEP 3 */}
       <div>
